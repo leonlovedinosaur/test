@@ -1,0 +1,40 @@
+
+<html>
+    <head>
+        <title>暴龙科</title>
+        
+    </head>
+    <body>
+        <h1>君王暴龙</h1>
+        <ul>
+            <li>Tyrannosaurus Rex</li>
+            <li>About 12 meters long</li>
+            <li>Attack power:10</li>
+            <li>Defensive power:6</li>
+        </ul>
+        
+        <img src="image/shipinbaolong.jpg">
+        <img src="image/sue.jpg">
+        <script>
+            const names = ["华丽羽王龙", "君王暴龙", "上游永川龙","五彩冠龙","勇士特暴龙","玫瑰马普龙","角鼻龙","卡洛琳南方巨兽龙","脆弱异特龙","撒哈拉鲨齿龙","巨齿龙","阿托卡高棘龙","埃及棘龙","玛君龙","萨氏食肉牛龙","巨型诸城暴龙","霍氏白熊龙","阿尔泰分支龙","矮暴龙","帝龙","大猛龙","巨食蜥王龙","格氏蛮龙","斑龙"];
+            const latinNames= ["Yutyrannus huali", "Tyrannosaurus Rex","yangchuanosaurus shangyouensis dong et. al.","Guanlong wucaii","Tarbosaurus bataar","Mapusaurus roseae","Ceratosaurus","Giganotosaurus carolini","Allosaurus","Carcharodontosaurus","Teratosaurus","Acrocanthosaurus","Spinosaurus aegyptiacus","Majungasaurus crenatissimus","carnotaurus","Zhuchengtyrannus magnus","Nanuqsaurus","Alioramus","Nanotyrannus","Dilong","Megaraptor","Saurophaganax","Torvosaurus","Megalosaurus"]
+            const lengths=["9","12","9","3","10","9","4","13","8"]
+            const gj=["8","10","8","4","9","8","6","10","8"]
+            const fy=["7","6","5","4","6","5","9","6","5"]
+            //alert("hello " + names);
+            const url = new URL(document.location)
+            const id = url.searchParams.get("id")
+            console.log(url.searchParams.get("id"))
+            //console.log(url.searchParams.get("as"))
+            //const as = url.searchParams.get("as")
+            //alert(names[id])
+            //alert(names[id])
+           // document.querySelectorAll("h1")[0].innerHTML = names[id]
+            document.querySelector("h1").innerHTML = names[id]
+            document.querySelectorAll("li")[0].innerHTML = latinNames[id];
+            document.querySelectorAll("li")[1].innerHTML = "About " + lengths[id] + " meters long";
+            document.querySelectorAll("li")[2].innerHTML = "Attack power:" + gj[id];
+            document.querySelectorAll("li")[3].innerHTML = "Defensive power:" + fy[id];
+        </script>
+    </body>
+</html>

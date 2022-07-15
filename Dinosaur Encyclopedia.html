@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <title>互动标签示例</title>
+    <style>
+      p {
+        font-family: sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        border: 2px solid rgba(0, 20, 200, 0.687);
+        background: rgba(200, 140, 0, 0.826);
+        color: rgba(127, 0, 200, 0.6);
+        box-shadow: 1px 1px 2px rgba(200, 0, 0, 0.361);
+        border-radius: 10px;
+        padding: 3px 10px;
+        display: inline-block;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+
+    
+    <p>恐龙百科：恐龙的复原</p>
+  
+    <script>
+      const para = document.querySelector('p');
+      para.addEventListener('click', updateName);
+      function updateName() {
+        const name = prompt('输入一个新的恐龙：');
+      /*  if (false == para.confir
+       while (null == name)
+        {
+          name = prompt('输入一个新的恐龙：');
+        }*/
+        para.textContent = '恐龙百科：' + name;       
+      }
+     </script>
+  </body>
+</html>
+
+<ul>
+    <li><a href="TRex.html">君王暴龙</a></li>
+    <li><a href="Spinosaur.html?id=1">埃及棘龙</a></li>
+    <li><a href="cl.html?id=2">霍夫曼内沧龙</a></li>
+
+</ul>
