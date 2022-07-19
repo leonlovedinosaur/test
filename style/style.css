@@ -1,0 +1,25 @@
+.row {
+    /* 使用flex box排版 */
+    display: flex;
+    /* 水平方向 */
+    flex-direction: row;
+    /* 垂直居中 */
+    align-items: center;
+    /* 主轴（水平）居中 */
+    justify-content: center;
+}
+
+.column {
+    flex: 1;
+    padding: 5px;
+}
+
+img {
+    /*改为块元素*/
+    display: block;
+    /*限制最大最小范围*/
+    max-width: 500px;
+    min-width: 100px;
+    /*维持宽高比*/
+    height: auto;
+}
